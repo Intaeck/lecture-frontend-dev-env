@@ -34,10 +34,17 @@ module.exports = {
           name: "[name].[ext]?[hash]",
           limit: 10000 // 10Kb
         }
-      }
+      },
       /**
        * TODO: babel-loader를 구성해 보세요.
        */
+      {
+        test: /\.js$/,
+        // loader: 나 use: 둘 다 사용가능
+        // loader: "babel-loader",
+        use: ["babel-loader"],
+        exclude: /node_modules/,
+      }
     ]
   },
   plugins: [
