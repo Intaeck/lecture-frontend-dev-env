@@ -1,8 +1,8 @@
 export default class View {
   constructor(el) {
     if (!el) throw el;
-
     this.el = el;
+    console.log('================ View.js this : ', this, el);
     return this;
   }
 

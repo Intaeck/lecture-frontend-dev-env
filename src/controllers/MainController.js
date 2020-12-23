@@ -11,6 +11,7 @@ import HistoryModel from "../models/HistoryModel.js";
 export default class MainController {
   constructor() {
     const formViewEl = document.querySelector("form");
+    console.log('============= MainController.js formViewEl : ', formViewEl);
     const tabViewEl = document.querySelector("#tabs");
     const keywordViewEl = document.querySelector("#search-keyword");
     const historyViewEl = document.querySelector("#search-history");

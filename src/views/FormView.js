@@ -3,9 +3,12 @@ import "./FormView.scss";
 
 export default class FormView extends View {
   constructor(el) {
+    console.log('============== FormView.js el : ', el);
     super(el);
+    console.log('============== FormView.js this : ', this);
     this._inputEl = el.querySelector("[type=text]");
     this._resetEl = el.querySelector("[type=reset]");
+    console.log('============== FormView.js this : ', this);
     this.showResetBtn(false);
     this.bindEvents();
     return this;
